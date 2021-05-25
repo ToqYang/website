@@ -6,9 +6,47 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
-	<title>All My Links</title>
+	<link rel="stylesheet" href="./scss/dist/principal.css">
+	<title>Santiago Yanguas</title>
 </head>
-<body>
-	
+<body id="sky-background">
+	<!-- NAV -->
+	<nav role="navigation">
+		<div id="menuToggle">
+			<!--
+			A fake / hidden checkbox is used as click reciever,
+			so you can use the :checked selector on it.
+			-->
+			<input type="checkbox" />
+			
+			<!--
+			Some spans to act as a hamburger.
+			
+			They are acting like a real hamburger,
+			not that McDonalds stuff.
+			-->
+			<span></span>
+			<span></span>
+			<span></span>
+			
+			<!--
+			Too bad the menu has to be inside of the button
+			but hey, it's pure CSS magic.
+			-->
+			<ul id="menu">
+				<a href="#"><li>Home</li></a>
+				<a href="#"><li>Projects</li></a>
+				<a href="#"><li>About me</li></a>
+				<a href="#"><li>Services</li></a>
+			</ul>
+		</div>
+	</nav>
+	<main id="mountains-background">
+		<div class="home">
+			<img class="home__hand" src="./images/principal/hand.webp" alt="" />
+			<h1 class="home__intro">&nbsp;&nbsp;&nbsp;my name is Santiago.</h1>
+			<h2 class="home__subtitle">I'm software developer, studying about programming and design.</h2>
+		</div>
+	</main>
 </body>
 </html>

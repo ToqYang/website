@@ -29,7 +29,7 @@ $font-family-name: 'Syncopate', sans-serif;
 $j2: 6;
 @for $i from 1 through 6 {
 	h#{$j2} {
-	  font-size: ($i * 0.5) + em;
+	  font-size: ($i * .7) + em;
 	}
 
 	$j2: $j2 - 1;
