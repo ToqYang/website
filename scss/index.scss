@@ -1,0 +1,71 @@
+@use "normalize";
+@use "base";
+
+
+#tv-background {
+	background-image: url("../../images/index/background-all-links.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	height: inherit;
+	background-size: cover;
+	background-size: 32em;
+	background-position-y: 6.5em;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: start;
+	align-items: center;
+}
+
+.social {
+	&__network {
+		background-color: base.$blue-sea;
+		padding: .5em 13em;
+		margin: 1em;
+		box-shadow: 10px 5px 5px black;
+		height: 4em;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		transition: transform .2s;
+	}
+
+	&__network:hover, &__network:hover > * > * {
+		background-color: white;
+		color: black;
+		transform: scale(1.1);
+	}
+
+	&__title, &__links {
+		color: white;
+	}
+
+	&__title {
+		font-size: .8em;
+		text-align: center;
+	}
+
+	/* a links social networks */
+	&__links {
+		text-decoration: unset;
+	}
+}
+
+.profile {
+	margin: 3em 0;
+
+	& {
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__img {
+		height: auto;
+		width: 6em;
+	}
+
+	&__user {
+		font-size: .8em;
+	}
+}
+

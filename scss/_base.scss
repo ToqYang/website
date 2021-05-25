@@ -1,0 +1,87 @@
+// =============================================================================
+// Colors
+// =============================================================================
+
+$blue-sea: #4B6CBD;
+$blue-aqua: #8CCBD1;
+$red-light: #E5645C;
+$blue-light: #F3F7FA;
+$red-dark: #D36E70;
+
+
+// =============================================================================
+// Fonts
+// =============================================================================
+
+$font-family-name: 'Syncopate', sans-serif;
+
+* {
+	font-family: $font-family-name;
+}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+// =============================================================================
+// Size text
+// =============================================================================
+$j2: 6;
+@for $i from 1 through 6 {
+	h#{$j2} {
+	  font-size: ($i * 0.5) + em;
+	}
+
+	$j2: $j2 - 1;
+}
+
+.black-body {
+	background-color: black;
+}
+
+html, body {
+	height: 100vh;
+	color: white;
+}
+
+.vh-100 {
+	height: 100vh;
+}
+
+.vw-100 {
+	width: 100vw;
+}
+
+.v-100 {
+	height: 100%;
+}
+
+.w-100 {
+	width: 100%;
+}
+
+@for $i from 1 through 6 {
+	.flex-#{$i} {
+	  flex: $i;
+	}
+}
+
+.flex {
+	display: flex;
+}
+
+.flex-row {
+	flex-direction: row;
+}
+
+.flex-column {
+	flex-direction: column;
+}
+
+.cursor-hand {
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👆</text></svg>") 16 0, auto;
+}
+
+.cursor-eyes {
+	cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;
+}
