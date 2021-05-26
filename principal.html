@@ -9,7 +9,7 @@
 	<link rel="stylesheet" href="./scss/dist/principal.css">
 	<title>Santiago Yanguas</title>
 </head>
-<body id="sky-background">
+<body>
 	<!-- NAV -->
 	<nav role="navigation">
 		<div id="menuToggle">
@@ -41,12 +41,51 @@
 			</ul>
 		</div>
 	</nav>
-	<main id="mountains-background">
-		<div class="home">
-			<img class="home__hand" src="./images/principal/hand.webp" alt="" />
-			<h1 class="home__intro">&nbsp;&nbsp;&nbsp;my name is Santiago.</h1>
-			<h2 class="home__subtitle">I'm software developer, studying about programming and design.</h2>
-		</div>
+	<main id="sky-background">
+		<!-- HOME -->
+		<section id="mountains-background">
+			<div class="home">
+				<img class="home__hand" src="./images/principal/hand.webp" alt="" />
+				<h1 class="home__intro">&nbsp;&nbsp;&nbsp;my name is Santiago.</h1>
+				<h2 class="home__subtitle">I'm software developer, studying about programming and design.</h2>
+			</div>
+		</section>
+		<!-- PROJECTS -->
+		<section class="projects">
+			<h4 class="projects__title">Projects</h4>
+			<div class="carousel-wrapper">
+				<div class="carousel">
+					<div id="project-1" class="carousel__photo initial">
+						<img class="" src="./images/principal/project/project_1.webp" />
+						<a class="carousel__text" href="">Hello 1</a>
+					</div>
+					<div id="project-2" class="carousel__photo">
+						<img class="" src="./images/principal/project/project_2.webp" />
+						<a class="carousel__text" href="">Hello 2</a>
+					</div>
+					<div id="project-3" class="carousel__photo">
+						<img src="./images/principal/project/project_3.webp" />
+						<a class="carousel__text" href="">Hello 3</a>
+					</div>
+					<div id="project-4" class="carousel__photo">
+						<img src="./images/principal/project/project_4.webp" />
+						<a class="carousel__text" href="">Hello 4</a>
+					</div>
+					<div id="project-5" class="carousel__photo">
+						<img src="./images/principal/project/project_5.webp" />
+						<a class="carousel__text" href="">Hello 5</a>
+					</div>
+					<div id="project-6" class="carousel__photo">
+						<img src="./images/principal/project/project_6.webp" />
+						<a class="carousel__text" href="">Hello 6</a>
+					</div>
+
+					<div class="carousel__button--next"></div>
+					<div class="carousel__button--prev"></div>  </div>
+			</div>
+		</section>
 	</main>
+
+	<script src="./js/principal.js"></script>
 </body>
 </html>
