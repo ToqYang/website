@@ -335,6 +335,32 @@ html, body {
   cursor: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='40' height='48' viewport='0 0 100 100' style='fill:black;font-size:24px;'><text y='50%'>👀</text></svg>") 16 0, auto;
 }
 
+.carousel__text {
+  color: black;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 2em 0;
+}
+.carousel__textbox {
+  margin-top: 2em;
+  display: flex;
+  flex-direction: column;
+}
+.carousel__textbox > img {
+  height: 30em;
+}
+.carousel__text--bg {
+  position: relative;
+  bottom: 62px;
+  height: 20px;
+  background-color: #8CCBD1;
+  transform-origin: 50% 100% 0px;
+  z-index: -1;
+  width: 150%;
+  left: -25%;
+}
+
 /* Parent wrapper to carousel. Width can be changed as needed. */
 .carousel-wrapper {
   overflow: hidden;
