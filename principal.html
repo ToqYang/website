@@ -7,6 +7,7 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" href="./scss/dist/principal.css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
 	<title>Santiago Yanguas</title>
 </head>
 <body>
@@ -53,59 +54,164 @@
 		<!-- PROJECTS -->
 		<section class="projects">
 			<h4 class="projects__title">Projects</h4>
-			<div class="carousel-wrapper">
-				<div class="carousel">
-					<div id="project-1" class="carousel__photo initial">
-						<img class="" src="./images/principal/project/project_1.webp" />
+			<div class="projects__carousel">
+				<!-- Flickity HTML init -->
+				<div class="carousel js-flickity">
+				  <!-- images from unsplash.com -->
+				  <div class="carousel-cell">
+				    <img id="project_1" src="./images/principal/project/project_1.webp" alt="orange tree" />
 						<div class="carousel__textbox">
 							<a class="carousel__text" href="">VIEW MORE</a>
 							<div class="carousel__text--bg"></div>
 						</div>
-					</div>
-					<div id="project-2" class="carousel__photo">
-						<img class="" src="./images/principal/project/project_2.webp" />
+				  </div>
+				  <div class="carousel-cell">
+				    <img id="project_2" src="./images/principal/project/project_2.webp" alt="submerged" />
 						<div class="carousel__textbox">
 							<a class="carousel__text" href="">VIEW MORE</a>
 							<div class="carousel__text--bg"></div>
 						</div>
-					</div>
-					<div id="project-3" class="carousel__photo">
+				  </div>
+				  <div class="carousel-cell">
+				    <img id="project_3" src="./images/principal/project/project_3.webp" alt="look-out" />
 						<div class="carousel__textbox">
-							<img src="./images/principal/project/project_3.webp" />
+							<a class="carousel__text" href="">VIEW MORE</a>
+							<div class="carousel__text--bg"></div>
+						</div>
+				  </div>
+				  <div class="carousel-cell">
+				    <img id="project_4" src="./images/principal/project/project_4.webp" alt="One World Trade" />
+						<div class="carousel__textbox">
+							<a class="carousel__text" href="">VIEW MORE</a>
+							<div class="carousel__text--bg"></div>
+						</div>
+				  </div>
+				  <div class="carousel-cell">
+				    <img id="project_5" src="./images/principal/project/project_5.webp" alt="drizzle" />
+						<div class="carousel__textbox">
+							<a class="carousel__text" href="">VIEW MORE</a>
+							<div class="carousel__text--bg"></div>
+						</div>
+				  </div>
+				  <div class="carousel-cell">
+				    <img id="project_6" src="./images/principal/project/project_6.webp" alt="cat nose" />
+						<div class="carousel__textbox">
+							<a class="carousel__text" href="">VIEW MORE</a>
+							<div class="carousel__text--bg"></div>
+						</div>
+						<div class="carousel-cell">
+							<img id="project_7" src="./images/principal/project/project_7.webp" alt="cat nose" />
 							<div class="carousel__textbox">
 								<a class="carousel__text" href="">VIEW MORE</a>
 								<div class="carousel__text--bg"></div>
+						</div>
+				  </div>
+				</div>
+			</div>
+		</section>
+		<!-- SERVICES -->
+		<section class="services">
+			<div class="services__imgbg"><h5 class="projects__title">Services</h5></div>
+			<div class="services__services">
+				<div class="services__box">
+					<!-- MOBILE DEVELOPER -->
+					<div class="flip-card">
+						<div class="services__box-12 flip-card-inner">
+							<div class="flip-card-front">
+								<div id="triangle" class="">
+									<svg xmlns="http://www.w3.org/2000/svg" width="213.371" height="234.908" viewBox="0 0 213.371 234.908">
+										<path id="Polígono_1" data-name="Polígono 1" d="M97.581,20.048a10,10,0,0,1,18.21,0l91.161,200.724a10,10,0,0,1-9.1,14.135H15.525a10,10,0,0,1-9.1-14.135Z" fill="#fff"/>
+									</svg>
+									<span class="bg-phone"></span>
+								</div>
+								<p>Mobile Developer</p>
+							</div>
+							<div class="flip-card-back">
+								<p class="flip-card-back__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+								<a class="flip-card-back__linkmore" href="">VIEW MORE</a>
 							</div>
 						</div>
 					</div>
-					<div id="project-4" class="carousel__photo">
-						<img src="./images/principal/project/project_4.webp" />
-						<div class="carousel__textbox">
-							<a class="carousel__text" href="">VIEW MORE</a>
-							<div class="carousel__text--bg"></div>
-						</div>
-					</div>
-					<div id="project-5" class="carousel__photo">
-						<img src="./images/principal/project/project_5.webp" />
-						<div class="carousel__textbox">
-							<a class="carousel__text" href="">VIEW MORE</a>
-							<div class="carousel__text--bg"></div>
-						</div>
-					</div>
-					<div id="project-6" class="carousel__photo">
-						<img src="./images/principal/project/project_6.webp" />
-						<div class="carousel__textbox">
-							<a class="carousel__text" href="">VIEW MORE</a>
-							<div class="carousel__text--bg"></div>
+					<!-- WEB DEVELOPER -->
+					<div class="flip-card">
+						<div class="services__box-12 flip-card-inner">
+							<div class="flip-card-front">
+								<div id="build" class="">
+									<svg xmlns="http://www.w3.org/2000/svg" width="150" height="225" viewBox="0 0 150 225">
+										<rect id="Rectángulo_5" data-name="Rectángulo 5" width="150" height="225" rx="10" fill="#fff"/>
+									</svg>
+									<span class="bg-phone"></span>
+								</div>
+								<p>Web Developer</p>
+							</div>
+							<div class="flip-card-back">
+								<p class="flip-card-back__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa ducimus vero commodi perferendis eveniet nisi totam nulla omnis unde adipisci aliquam, libero reiciendis distinctio quasi officia veniam. Fugiat, minima?</p>
+								<a class="flip-card-back__linkmore" href="">VIEW MORE</a>
+							</div>
 						</div>
 					</div>
 
-					<div class="carousel__button--next"></div>
-					<div class="carousel__button--prev"></div>  </div>
+					<!-- UI/UX -->
+					<div class="flip-card">
+						<div id="turn-ux" class="services__rect flip-card-inner">
+							<div class="flip-card-front">
+								<div id="abc">
+									<svg xmlns="http://www.w3.org/2000/svg" width="685" height="97.422" viewBox="0 0 685 97.422">
+										<g id="ABC" transform="translate(-0.425 0)">
+											<g id="Grupo_2" data-name="Grupo 2" transform="translate(0.425 0.607)">
+												<rect id="Rectángulo_14" data-name="Rectángulo 14" width="107.164" height="95.828" transform="translate(0)" fill="#fff"/>
+												<text id="D" transform="translate(0 26.445)" font-size="32" font-family="SegoeUI, Segoe UI"><tspan x="42.363" y="35">D</tspan></text>
+											</g>
+											<g id="Grupo_3" data-name="Grupo 3" transform="translate(112.364 0)">
+												<g id="Rectángulo_12" data-name="Rectángulo 12" transform="translate(0)" fill="#fff" stroke="rgba(112,112,112,0.05)" stroke-width="1">
+													<rect width="107.164" height="97.421" stroke="none"/>
+													<rect x="0.5" y="0.5" width="106.164" height="96.421" fill="none"/>
+												</g>
+												<text id="E" transform="translate(0.062 28.211)" stroke="rgba(112,112,112,0.05)" stroke-width="1" font-size="32" font-family="SegoeUI, Segoe UI"><tspan x="45.488" y="35">E</tspan></text>
+											</g>
+											<g id="Grupo_4" data-name="Grupo 4" transform="translate(224.728 0)">
+												<g id="Rectángulo_13" data-name="Rectángulo 13" transform="translate(3.369)" fill="#fff" stroke="rgba(112,112,112,0.05)" stroke-width="1">
+													<rect width="107.164" height="97.421" stroke="none"/>
+													<rect x="0.5" y="0.5" width="106.164" height="96.421" fill="none"/>
+												</g>
+												<text id="S" transform="translate(-0.302 27.309)" stroke="rgba(112,112,112,0.05)" stroke-width="1" font-size="32" font-family="SegoeUI, Segoe UI"><tspan x="48.451" y="35">S</tspan></text>
+											</g>
+											<g id="Grupo_5" data-name="Grupo 5" transform="translate(338.63 0)">
+												<g id="Rectángulo_11" data-name="Rectángulo 11" transform="translate(4.119)" fill="#fff" stroke="rgba(112,112,112,0.05)" stroke-width="1">
+													<rect width="107.164" height="97.422" stroke="none"/>
+													<rect x="0.5" y="0.5" width="106.164" height="96.422" fill="none"/>
+												</g>
+												<text id="I" transform="translate(0 27.476)" stroke="rgba(112,112,112,0.05)" stroke-width="1" font-size="32" font-family="SegoeUI, Segoe UI"><tspan x="53.443" y="35">I</tspan></text>
+											</g>
+											<g id="Grupo_7" data-name="Grupo 7" transform="translate(570.591 2.488)">
+												<rect id="Rectángulo_10" data-name="Rectángulo 10" width="107.164" height="95.094" transform="translate(4.493 -0.732)" fill="#fff"/>
+												<text id="N" transform="translate(-2.166 25.476)" font-size="32" font-family="SegoeUI, Segoe UI"><tspan x="46.106" y="35">N</tspan></text>
+											</g>
+											<g id="Grupo_8" data-name="Grupo 8" transform="translate(454.031 0)">
+												<g id="Rectángulo_9" data-name="Rectángulo 9" transform="translate(3.744)" fill="#fff" stroke="rgba(112,112,112,0.05)" stroke-width="1">
+													<rect width="107.164" height="97.422" stroke="none"/>
+													<rect x="0.5" y="0.5" width="106.164" height="96.422" fill="none"/>
+												</g>
+												<text id="G" transform="translate(-0.257 27.125)" stroke="rgba(112,112,112,0.05)" stroke-width="1" font-size="32" font-family="SegoeUI, Segoe UI"><tspan x="46.349" y="35">G</tspan></text>
+											</g>
+										</g>
+									</svg>
+								</div>
+
+								<p>UI/UX</p>
+							</div>
+							<div class="flip-card-back">
+								<p class="flip-card-back__desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam culpa ducimus vero commodi perferendis eveniet nisi totam nulla omnis unde adipisci aliquam, libero reiciendis distinctio quasi officia veniam. Fugiat, minima?</p>
+								<a class="flip-card-back__linkmore" href="">VIEW MORE</a>
+							</div>
+						</div>
+					</div>
+				</div>
 			</div>
 		</section>
 	</main>
 
 	<script src="./js/principal.js"></script>
+	<script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
 </body>
 </html>

@@ -2,6 +2,8 @@
 @use "base";
 @use "carousel";
 @use "menu";
+@use "icons";
+@use "flipcard";
 
 
 #sky-background{
@@ -12,6 +14,7 @@
 	background-size: cover;
 	background-position-y: 0em;
 }
+
 
 #mountains-background {
 	background-image: url("../../images/principal/mountains.webp");
@@ -48,11 +51,95 @@
 	> h4 {
 		color: black;
 		text-align: center;
-		font-size: 2vw;
+		font-size: 2em;
 		margin: 3em;
+	}
+
+	&__carousel {
+		margin: 6em 0;
+	}
+
+	&__title  {
+		font-size: 2em;
 	}
 }
 
+
+.services {
+	display: flex;
+	flex-direction: row;
+	height: 550px;
+	margin: 12em 0;
+
+	&__imgbg {
+		background-image: url("../../images/principal/services_light.webp");
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		min-height: 400px;
+		flex: 1;
+		border-radius: 0 20px 20px 0;
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.2);
+	}
+
+	&__services {
+		flex: 1;
+	}
+
+	&__box {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	&__box-12 {
+		height: 305px;
+		width: 218px;
+		background-color: base.$blue-light;
+
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		flex-direction: column;
+		margin: 0 0 2.7em 5.7em;;
+		border-radius: 10px;
+	}
+
+	&__rect {
+		width: 531px;
+		height: 200px;
+		background-color: base.$blue-light;
+		transform-origin: left top;
+
+		display: flex;
+		align-items: center;
+		justify-content: end;
+		flex-direction: column;
+		border-radius: 10px;
+		margin: 0 5.7em;
+	}
+
+	&__box-12 > .flip-card-front {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+	&__box-12 > .flip-card-front > p, &__rect > .flip-card-front > p {
+		color: black;
+	}
+}
+
+#turn-box > svg {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	transform: scale(0.8);
+}
 
 @media (min-width: 1400px) {
 	#mountains-background {

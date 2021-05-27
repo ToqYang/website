@@ -4,6 +4,7 @@
 
 $blue-sea: #4B6CBD;
 $blue-aqua: #8CCBD1;
+$blue-light: #F3F7FA;
 $red-light: #E5645C;
 $blue-light: #F3F7FA;
 $red-dark: #D36E70;
@@ -39,6 +40,10 @@ $j2: 6;
 	background-color: black;
 }
 
+html {
+	scroll-behavior: smooth;
+}
+
 html, body {
 	height: 100vh;
 	color: white;
@@ -64,6 +69,10 @@ html, body {
 	.flex-#{$i} {
 	  flex: $i;
 	}
+}
+
+a {
+	text-decoration: none;
 }
 
 .flex {

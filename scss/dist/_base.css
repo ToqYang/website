@@ -35,6 +35,10 @@ h1 {
   background-color: black;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   height: 100vh;
   color: white;
@@ -78,6 +82,10 @@ html, body {
 
 .flex-6 {
   flex: 6;
+}
+
+a {
+  text-decoration: none;
 }
 
 .flex {

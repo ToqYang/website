@@ -1,0 +1,83 @@
+.bg-books_1f4da {
+  width: 144px;
+  height: 144px;
+  background: url("../../images/principal/css_sprites.webp") -480px -32px;
+}
+
+.bg-briefcase_1f4bc {
+  width: 144px;
+  height: 144px;
+  background: url("../../images/principal/css_sprites.webp") -480px -240px;
+}
+
+.bg-calendar {
+  width: 144px;
+  height: 144px;
+  background: url("../../images/principal/css_sprites.webp") -32px -480px;
+}
+
+.bg-cash {
+  width: 144px;
+  height: 144px;
+  background: url("../../images/principal/css_sprites.webp") -240px -480px;
+}
+
+.bg-check_mark_2714_fe0f {
+  width: 160px;
+  height: 160px;
+  background: url("../../images/principal/css_sprites.webp") -32px -32px;
+}
+
+.bg-house_with_garden_1f3e1 {
+  width: 144px;
+  height: 144px;
+  background: url("../../images/principal/css_sprites.webp") -448px -480px;
+}
+
+.bg-Icon_awesome_linkedin {
+  width: 40px;
+  height: 40px;
+  background: url("../../images/principal/css_sprites.webp") -896px -32px;
+}
+
+.bg-Icon_awesome_linkedin_1 {
+  width: 37px;
+  height: 37px;
+  background: url("../../images/principal/css_sprites.webp") -896px -136px;
+}
+
+.bg-Icon_awesome_twitter {
+  width: 49px;
+  height: 41px;
+  background: url("../../images/principal/css_sprites.webp") -448px -688px;
+}
+
+.bg-Icon_awesome_twitter_1 {
+  width: 44px;
+  height: 38px;
+  background: url("../../images/principal/css_sprites.webp") -561px -688px;
+}
+
+.bg-light {
+  width: 144px;
+  height: 144px;
+  background: url("../../images/principal/css_sprites.webp") -688px -32px;
+}
+
+.bg-man_technologist_1f468_200d_1f4bb {
+  width: 160px;
+  height: 160px;
+  background: url("../../images/principal/css_sprites.webp") -256px -32px;
+}
+
+.bg-pc {
+  width: 144px;
+  height: 144px;
+  background: url("../../images/principal/css_sprites.webp") -688px -240px;
+}
+
+.bg-phone {
+  width: 144px;
+  height: 144px;
+  background: url("../../images/principal/css_sprites.webp") -688px -448px;
+}
